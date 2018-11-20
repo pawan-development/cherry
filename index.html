@@ -18,20 +18,34 @@
 <div class="shadow-sm" id="top-header">
     <div class="container">
 
-        <div class="row">
+        <div class="row" style="line-height: 100px">
             <div class="col-sm-6">
                 <span class="text-hide">CHERRY FASHION</span>
                 <img src="resource/img/Logo/CHERRY%20FASHION%20LOGO%20%2005.png" class="w-50">
             </div>
-            <div class="col">
+            <div class="col-sm-4">
                 <!-- Actual search box -->
                 <div class="form-group has-search">
                     <span class="fa fa-search form-control-feedback"></span>
                     <input type="text" class="form-control text-secondary" placeholder="Search your item here">
                 </div>
             </div>
-            <div class="col">
-                <span>Your Cart</span>
+            <div class="col-sm-2 p-2 text-muted">
+                <div style="line-height: 25px"class="mb-2">
+                    <p style="display: inline-block" class="float-left mr-3 mb-0">
+                        <small class="font-weight-bold p-0">Your Cart</small>
+                        <br>
+                        <small>Item 000</small>
+
+                    </p>
+                    <p style="display: inline-block" class="float-center"><i class="fas fa-shopping-cart"></i></p>
+                    <p class="text-left mb-0">
+                    </p>
+                </div>
+                <div style="line-height: 25px;position: absolute;margin-top:10px">
+                    <a href="#" class="text-muted"><small>Any enquiry</small></a>
+                </div>
+
             </div>
         </div>
 
@@ -52,10 +66,47 @@
                     <a class="nav-item nav-link" href="#">Services</a>
                     <a class="nav-item nav-link" href="#">Contact</a>
                 </div>
-                <form class="form-inline my-2 my-lg-0">
-                    <i class="fas fa-user"></i> <a href="#" class="text-secondary">&nbsp Signup</a>&nbsp / &nbsp <a class="text-secondary" href="#">Signin</a>
+
+                    <i class="fas fa-user"></i> <a href="#"  class="text-secondary">&nbsp Signup</a>&nbsp /<button type="button" class="btn btn-link text-muted" data-toggle="modal" data-target="#exampleModal">sign in</button>
+
                     <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-                </form>
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content modal-backopc">
+                                <div class="modal-header">
+                                    <h6 class="modal-title text-muted "  id="exampleModalLabel">Sign In</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <form id="loginForm" action="">
+                                        <div class="form-group row">
+                                            <!--<label for="inputEmail3" class="col-sm-4 col-form-label">Username/Email</label>-->
+                                            <div class="col-sm-12">
+                                                <input type="email" class="form-control" id="inputEmail3" placeholder="Please Enter Email/Username">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <!--<label for="inputPassword3" class="col-sm-4 col-form-label">Enter Password</label>-->
+                                            <div class="col-sm-12">
+                                                <input type="password" class="form-control" id="inputPassword3" placeholder="Your Password here">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a  href="#" class="text-left">Forgot Password</a>
+                                            <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                                            <button type="submit" class="btn btn-dark">Sign In</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
             </div>
         </nav>
 

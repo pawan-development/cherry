@@ -4,7 +4,6 @@ body{
 }
 /*Top Header Css Start*/
 #top-header{
-    line-height: 85px;
     background-color: #FFFCFC;
 
 }
@@ -86,6 +85,22 @@ body{
 .signup-avtar{
     flex: 1;
 }
+.modal-backopc
+{
+    opacity:0.6 !important;
+    border-radius: 1.0rem;
+    border: none;
+}
+#loginForm input{
+    border-radius: 1.25rem;
+    background-color: ghostwhite ;
+    color: black;
+
+}
+
+
+
+
 /*avtar upload*/
 
 .avatar-upload {
